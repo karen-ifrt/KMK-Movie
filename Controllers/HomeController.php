@@ -2,7 +2,7 @@
 
     require ('Models/Home.php');
 
-    $all_actors = getActors();
+    $all_movies = getMovie();
 
     require ('Views/HomeView.php');
 
