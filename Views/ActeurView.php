@@ -1,14 +1,16 @@
 <?php
-$title = "Film";
+$title = "Acteur";
 include 'header.php';
 
 ?>
 
 <div class="row">
             <form action="index.php" method="get">
-                <select name="Acteur">
-                    echo '<option>Choisissez un acteur</option>';
-                    foreach ($all_Actors as $Actor) {
+                <select name="Acteur"> 
+                    <?php
+                    echo '<option>Choisissez votre film</option>';
+                    foreach ($all_actors as $acteur) {
+                        echo '<option value="'.$acteur['id'].'">' . $acteur['nom'] . '</option>';
                     }
                     ?>
                 <input type="submit" value="Envoyer"/>
