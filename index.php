@@ -11,3 +11,6 @@ else {
 $page = ucfirst($page);
 
 include('Controllers/'.$page.'Controller.php');
+
+
+?>
