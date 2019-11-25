@@ -4,8 +4,9 @@ include 'header.php';
 ?>
 
 <div class="container-fluid">
-    <div class="row">
-        <video class="video" src="assets/img/PopCorn.mp4" autoplay muted loop></video>
+    <div class="row" >
+        <video class="video" src="assets/img/PopCorn.mp4" autoplay muted loop>
+        </video>
 
             <form action="index.php" method="get">
                 <select name="film">
@@ -16,5 +17,16 @@ include 'header.php';
                     }
                     ?>
                 <input type="submit" value="Envoyer"/>
-        </div>
+            </form>
+            <form action="index.php" method="get">
+                <select name="Acteur"> 
+                    <?php
+                    echo '<option>Choisissez un acteur</option>';
+                    foreach ($all_actors as $acteur) {
+                        echo '<option value="'.$acteur['id'].'">' . $acteur['nom'] . '</option>';
+                    }
+                    ?>
+                <input type="submit" value="Envoyer"/>
+            </form>
     </div>
+</div>

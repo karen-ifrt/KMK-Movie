@@ -14,4 +14,13 @@ function getMovie() {
     $all_movies = $all_movies->fetchAll();
     return $all_movies;
 }
+
+function getActors() {
+    global $dbh;
+    $all_actors = $dbh->prepare('SELECT * from acteurs ORDER BY nom ASC');
+    $all_actors->execute();
+    $all_actors = $all_actors->fetchAll();
+    return $all_actors;
+}
+
 ?>
