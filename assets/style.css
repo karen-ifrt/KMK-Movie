@@ -65,3 +65,9 @@ input, textarea{
 select {
 	text-transform: uppercase;
 }
+
+.film-title {
+	text-align: center;
+	font-size: 2rem;
+	text-transform: uppercase;
+}
