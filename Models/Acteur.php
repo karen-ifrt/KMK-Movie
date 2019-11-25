@@ -10,7 +10,7 @@ function getActors() {
     global $dbh;
     $all_actors = $dbh->prepare('SELECT * from acteurs ORDER BY titre ASC');
     $all_actors->execute();
-    $all_actors = $all_mactors->fetchAll();
+    $all_actors = $all_actors->fetchAll();
     return $all_actors;
 }
 
