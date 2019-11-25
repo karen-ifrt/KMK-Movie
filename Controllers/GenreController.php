@@ -7,7 +7,7 @@
         $id = $_GET['genre'];
     }
 
-    $genres = getGenre($id);
+    $gender = getGender($id);
 
     
 

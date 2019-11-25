@@ -4,8 +4,8 @@
 
     $all_movies = getMovie();
     $all_actors = getActors();
-    $all_realisateurs = getRealisateurs();
-    $all_genres = getGenres();
+    $all_directors = getDirectors();
+    $all_genders = getGenders();
     require ('Views/HomeView.php');
 
 

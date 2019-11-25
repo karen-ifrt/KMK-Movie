@@ -23,19 +23,19 @@ function getActors() {
     return $all_actors;
 }
 
-function getRealisateurs() {
+function getDirectors() {
     global $dbh;
-    $all_realisateurs = $dbh->prepare('SELECT * from realisateur ORDER BY nom ASC');
-    $all_realisateurs ->execute();
-    $all_realisateurs  = $all_realisateurs ->fetchAll();
-    return $all_realisateurs ;
+    $all_directors = $dbh->prepare('SELECT * from realisateur ORDER BY nom ASC');
+    $all_directors ->execute();
+    $all_directors  = $all_directors ->fetchAll();
+    return $all_directors ;
 }
 
-function getGenres() {
+function getGenders() {
     global $dbh;
-    $all_genres = $dbh->prepare('SELECT * from genre ORDER BY genre ASC');
-    $all_genres->execute();
-    $all_genres = $all_genres->fetchAll();
-    return $all_genres;
+    $all_genders = $dbh->prepare('SELECT * from genre ORDER BY genre ASC');
+    $all_genders->execute();
+    $all_genders = $all_genders->fetchAll();
+    return $all_genders;
 }
 ?>

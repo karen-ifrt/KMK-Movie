@@ -6,7 +6,7 @@
         $id = $_GET['realisateur'];
     }
 
-    $realisateurs = getRealisateur($id);
+    $directors = getDirector($id);
 
     require ('Views/RealisateurView.php');
 
