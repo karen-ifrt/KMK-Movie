@@ -47,6 +47,7 @@ include 'header.php';
                            echo  '<div class="card">';
                            echo '<div class="card-header"><img class="img-thumbnail" src="assets/img/' . $value['image'] . '"></div>';
                            echo '<div class="card-body">' . $value['nom'] . '</div>';
+                           echo   '<div class="card-footer"><a href="index.php?page=acteur&acteur='. $value['id'] . '">Voir la fiche</a></div>';
                            echo '</div>';
                         };   ?>
 
@@ -65,13 +66,15 @@ include 'header.php';
                         echo  '<div class="card">';
                         echo '<div class="card-header"><img class="img-thumbnail" src="assets/img/' . $valreal['image'] . '"></div>';
                         echo '<div class="card-body">' . $valreal['nom'] . '</div>';
-                        echo '</div>';                    };
+                        echo   '<div class="card-footer"><a href="index.php?page=realisateur&realisateur='. $valreal['id'] . '">Voir la fiche</a></div>';
+                        echo '</div>';                   
+                    };
                     ?>
                 </div>
             </div>
         </div>
         <div class="retour">
-            <a href="index.php" class="btn-retour">Retour</a>
+            <a href="index.php" class="btn-retour">Retour accueil</a>
         </div>
     </div>
 </div>

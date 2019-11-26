@@ -154,6 +154,11 @@ select {
 	background-color: #ddd;
 }
 
+.card-header, .card-body {
+	text-align: center;
+	text-transform: uppercase;
+}
+
 .card-header img {
 	width: 150px;
 }
@@ -164,21 +169,18 @@ select {
 	height: 2px;
 	width: 70px;
 	background-color: #333;
-	margin: 7px auto;
+	margin: 7px 0 15px 0;
 }
 
-.title-movie {
-	text-align: center;
-}
 
 .title-movie h3 {
 	font-size: 1.5rem;
 	font-weight: bold;
+	margin-top: 30px;
 }
 
 .list-movie {
 	display: flex;
-	justify-content: space-around;
 	text-transform: uppercase;
 }
 
@@ -201,4 +203,14 @@ select {
 .actor-content {
 	font-size: 1.2rem;
 	line-height: 1.3;
+}
+
+.card-footer a {
+	text-decoration: none;
+	color: rgb(151, 45, 45);
+	text-transform: uppercase;
+}
+
+.card-footer {
+	text-align: center;
 }

@@ -16,7 +16,7 @@ function getActor($id) {
 
 function actorMovie ($id){
     global $dbh;
-    $statement = $dbh->prepare('SELECT jouer.id, jouer.id_Films, films.titre FROM ((jouer INNER JOIN films ON jouer.id_Films = films.id) INNER JOIN acteurs ON jouer.id = acteurs.id) WHERE acteurs.id = ?');
+    $statement = $dbh->prepare('SELECT jouer.id, jouer.id_Films, films.titre, films.image FROM ((jouer INNER JOIN films ON jouer.id_Films = films.id) INNER JOIN acteurs ON jouer.id = acteurs.id) WHERE acteurs.id = ?');
     $statement->execute(array($id));
     $actormovie = $statement->fetchAll();
     return $actormovie;
