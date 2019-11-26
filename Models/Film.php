@@ -25,7 +25,7 @@ function movieActor ($id){
 
 function movieReal ($id){
     global $dbh;
-    $statement = $dbh->prepare('SELECT realiser.id, realiser.id_realisateur, realisateur.nom FROM ((realiser INNER JOIN films ON realiser.id = films.id) INNER JOIN realisateur ON realiser.id_realisateur = realisateur.id) WHERE films.id = ?');
+    $statement = $dbh->prepare('SELECT realiser.id, realiser.id_realisateur, realisateur.nom, realisateur.image FROM ((realiser INNER JOIN films ON realiser.id = films.id) INNER JOIN realisateur ON realiser.id_realisateur = realisateur.id) WHERE films.id = ?');
     $statement->execute(array($id));
     $moviereal = $statement->fetchAll();
     return $moviereal;

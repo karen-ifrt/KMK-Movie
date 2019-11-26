@@ -69,6 +69,29 @@ select {
 	text-transform: uppercase;
 }
 
+.btn-retour {
+	text-transform: uppercase;
+	border: 1px solid rgb(151, 45, 45);;
+	padding: 10px 15px;
+	background-color: rgb(151, 45, 45);
+	font-weight: bold;
+	color: #fff;
+	border-radius: 3px;
+	text-decoration: none;
+	transition: all .3s;
+}
+
+.retour {
+	text-align: center;
+	margin-top: 20px;
+}
+
+.btn-retour:hover {
+	color: rgb(151, 45, 45);
+	text-decoration: none;
+	background-color: #fff;
+}
+
 
 /* FICHE FILM */
 
@@ -127,11 +150,55 @@ select {
 	font-weight: bold;
 }
 
-.content-actor {
-	margin: 0 auto;
-	display: block;
+.card {
+	background-color: #ddd;
+}
+
+.card-header img {
+	width: 150px;
+}
+
+/* FICHE ACTEUR */
+
+.movie-divider {
+	height: 2px;
+	width: 70px;
+	background-color: #333;
+	margin: 7px auto;
+}
+
+.title-movie {
+	text-align: center;
+}
+
+.title-movie h3 {
+	font-size: 1.5rem;
+	font-weight: bold;
 }
 
 .list-movie {
 	display: flex;
+	justify-content: space-around;
+	text-transform: uppercase;
+}
+
+.fiche-acteur {
+	margin: 50px 0;
+}
+
+.acteur-title {
+	text-align: center;
+	font-size: 2.2rem;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+
+.fiche-acteur img {
+	width: 250px;
+}
+
+.actor-content {
+	font-size: 1.2rem;
+	line-height: 1.3;
 }

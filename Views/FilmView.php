@@ -23,10 +23,10 @@ include 'header.php';
                     <div class="content">
                         <p class="date">Date de sortie : <?php echo $movies['date'] ?></p>
                         <p class="nationalite">Nationalité : <?php echo $movies['nationalite'] ?></p>
-                        <p>Genre(s) : <?php         
-                        foreach ($mygenre as $key => $value) {
-            echo $value['genre'] . ' - ';
-        } ?></p>
+                        <p>Genre(s) : <?php
+                                        foreach ($mygenre as $key => $value) {
+                                            echo $value['genre'] . ' - ';
+                                        } ?></p>
                         <p class="synopsis">Synopsis : <?php echo $movies['synopsis'] ?></p>
                     </div>
 
@@ -41,27 +41,37 @@ include 'header.php';
                     <div class="divider"></div>
                 </div>
                 <div class="content-actor">
-                    <?php
-                    foreach ($myactor as $key => $value) {
-                        echo '<p class="actor-name">' . $value['nom'] . '</p>';
-                    };   ?>
+
+                        <?php
+                        foreach ($myactor as $key => $value) {
+                           echo  '<div class="card">';
+                           echo '<div class="card-header"><img class="img-thumbnail" src="assets/img/' . $value['image'] . '"></div>';
+                           echo '<div class="card-body">' . $value['nom'] . '</div>';
+                           echo '</div>';
+                        };   ?>
+
                 </div>
             </div>
 
             <div class="col-md-6">
-            <div class="title-actor">
-                    <h3>LES RÉALISATEURS</h3>
+                <div class="title-actor">
+                    <h3>LE(S) RÉALISATEUR(S)</h3>
                     <div class="divider"></div>
                 </div>
                 <div class="content-real">
                     <?php
 
                     foreach ($myreal as $key => $valreal) {
-                        echo '<p class="real-name">' .  $valreal['nom'] . '</p>';
-                    };
+                        echo  '<div class="card">';
+                        echo '<div class="card-header"><img class="img-thumbnail" src="assets/img/' . $valreal['image'] . '"></div>';
+                        echo '<div class="card-body">' . $valreal['nom'] . '</div>';
+                        echo '</div>';                    };
                     ?>
                 </div>
             </div>
+        </div>
+        <div class="retour">
+            <a href="index.php" class="btn-retour">Retour</a>
         </div>
     </div>
 </div>
