@@ -23,4 +23,19 @@ function getActors() {
     return $all_actors;
 }
 
+function getDirectors() {
+    global $dbh;
+    $all_directors = $dbh->prepare('SELECT * from realisateur ORDER BY nom ASC');
+    $all_directors ->execute();
+    $all_directors  = $all_directors ->fetchAll();
+    return $all_directors ;
+}
+
+function getGenders() {
+    global $dbh;
+    $all_genders = $dbh->prepare('SELECT * from genre ORDER BY genre ASC');
+    $all_genders->execute();
+    $all_genders = $all_genders->fetchAll();
+    return $all_genders;
+}
 ?>

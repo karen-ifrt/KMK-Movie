@@ -30,5 +30,27 @@ include 'header.php';
                 ?>
                 <input type="submit" value="Envoyer" />
         </form>
+           
+        
+            <form action="index.php" method="get">
+                <select name="realisateur"> 
+                    <?php
+                    echo '<option>Choisissez un realisateur</option>';
+                    foreach ($all_directors as $realisateur) {
+                        echo '<option value="'.$realisateur['id'].'">' . $realisateur['nom'] . '</option>';
+                    }
+                    ?>
+                <input type="submit" value="Envoyer"/>
+            </form>
+            <form action="index.php" method="get">
+                <select name="Genre"> 
+                    <?php
+                    echo '<option>Choisissez un genre</option>';
+                    foreach ($all_genders as $genre) {
+                        echo '<option value="'.$genre['id'].'">' . $genre['genre'] . '</option>';
+                    }
+                    ?>
+                <input type="submit" value="Envoyer"/>
+            </form>
     </div>
 </div>
