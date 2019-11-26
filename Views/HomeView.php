@@ -4,29 +4,31 @@ include 'header.php';
 ?>
 
 <div class="container-fluid">
-    <div class="row" >
+    <div class="row">
         <video class="video" src="assets/img/PopCorn.mp4" autoplay muted loop>
         </video>
 
-            <form action="index.php" method="get">
-                <select name="film">
-                    <?php
-                    echo '<option>Choisissez votre film</option>';
-                    foreach ($all_movies as $film) {
-                        echo '<option value="'.$film['id'].'">' . $film['titre'] . '</option>';
-                    }
-                    ?>
-                <input type="submit" value="Envoyer"/>
-            </form>
-            <form action="index.php" method="get">
-                <select name="Acteur"> 
-                    <?php
-                    echo '<option>Choisissez un acteur</option>';
-                    foreach ($all_actors as $acteur) {
-                        echo '<option value="'.$acteur['id'].'">' . $acteur['nom'] . '</option>';
-                    }
-                    ?>
-                <input type="submit" value="Envoyer"/>
-            </form>
+        <form action="index.php" method="get">
+            <input type="hidden" name="page" value="film">
+
+            <select name="film">
+                <?php
+                echo '<option>Choisissez votre film</option>';
+                foreach ($all_movies as $film) {
+                    echo '<option value="' . $film['id'] . '">' . $film['titre'] . '</option>';
+                }
+                ?>
+                <input type="submit" value="Envoyer" />
+        </form>
+        <form action="index.php" method="get">
+            <select name="Acteur">
+                <?php
+                echo '<option>Choisissez un acteur</option>';
+                foreach ($all_actors as $acteur) {
+                    echo '<option value="' . $acteur['id'] . '">' . $acteur['nom'] . '</option>';
+                }
+                ?>
+                <input type="submit" value="Envoyer" />
+        </form>
     </div>
 </div>
