@@ -8,6 +8,10 @@
     }
 
     $movies = getMovie($id);
+    $myactor = movieActor($id);
+    $myreal = movieReal($id);
     require ('Views/FilmView.php');
+
+
 
 ?>

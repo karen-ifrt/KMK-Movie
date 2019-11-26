@@ -25,6 +25,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	font-family: 'Raleway', sans-serif;
 }
 ol, ul {
 	list-style: none;
@@ -54,6 +55,8 @@ input, textarea{
 /***************END OF RESET************/
 /***************************************/
 
+/* HOME PAGE */
+
 
 .video {
     filter: opacity(60%);
@@ -66,8 +69,44 @@ select {
 	text-transform: uppercase;
 }
 
+
+/* FICHE FILM */
+
 .film-title {
 	text-align: center;
 	font-size: 2rem;
 	text-transform: uppercase;
+}
+
+.content {
+	line-height: 1.2;
+}
+
+.content p {
+	margin-bottom: 5px;
+}
+
+.onefilm {
+	margin-top: 50px;
+}
+
+.fiche-film {
+	margin-top: 50px;
+}
+
+.content-actor, .content-real {
+	display: flex;
+	justify-content: space-around;
+}
+
+.actor-name, .real-name {
+	text-transform: uppercase;
+}
+
+.title-actor {
+	margin-top: 100px;
+}
+
+.title-actor h3 {
+	text-align: center;
 }

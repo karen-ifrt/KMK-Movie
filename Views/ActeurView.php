@@ -3,13 +3,23 @@ $title = "Acteur";
 include 'header.php';
 
 
-include 'footer.php';
 
 
 ?>
 <div class="container-fluid">
-    <div class="row" >
+    <div class="row">
         <div class="col-md-6">
-        <?php echo $Acteur['nom'];
-        ?>
+            <?php
+            foreach ($mymovie as $key => $value) {
+                echo $value['titre'];
+                }            ?>
+        </div>
+
     </div>
+</div>
+
+<?php
+include 'footer.php';
+
+
+?>

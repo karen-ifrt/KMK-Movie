@@ -6,7 +6,8 @@
         $id = $_GET['realisateur'];
     }
 
-    $directors = getDirector($id);
+    $directors = getReal($id);
+    $realPic = realMoviePic($id);
 
     require ('Views/RealisateurView.php');
 
