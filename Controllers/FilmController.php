@@ -10,6 +10,7 @@
     $movies = getMovie($id);
     $myactor = movieActor($id);
     $myreal = movieReal($id);
+    $mygenre = myGenre($id);
     require ('Views/FilmView.php');
 
 

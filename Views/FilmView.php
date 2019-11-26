@@ -23,6 +23,10 @@ include 'header.php';
                     <div class="content">
                         <p class="date">Date de sortie : <?php echo $movies['date'] ?></p>
                         <p class="nationalite">Nationalité : <?php echo $movies['nationalite'] ?></p>
+                        <p>Genre(s) : <?php         
+                        foreach ($mygenre as $key => $value) {
+            echo $value['genre'] . ' - ';
+        } ?></p>
                         <p class="synopsis">Synopsis : <?php echo $movies['synopsis'] ?></p>
                     </div>
 
@@ -34,7 +38,7 @@ include 'header.php';
             <div class="col-md-6">
                 <div class="title-actor">
                     <h3>LES ACTEURS</h3>
-
+                    <div class="divider"></div>
                 </div>
                 <div class="content-actor">
                     <?php
@@ -45,6 +49,10 @@ include 'header.php';
             </div>
 
             <div class="col-md-6">
+            <div class="title-actor">
+                    <h3>LES RÉALISATEURS</h3>
+                    <div class="divider"></div>
+                </div>
                 <div class="content-real">
                     <?php
 

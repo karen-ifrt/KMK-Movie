@@ -74,8 +74,9 @@ select {
 
 .film-title {
 	text-align: center;
-	font-size: 2rem;
+	font-size: 2.2rem;
 	text-transform: uppercase;
+	font-weight: bold;
 }
 
 .content {
@@ -84,19 +85,25 @@ select {
 
 .content p {
 	margin-bottom: 5px;
+	font-size: 1.2rem;
 }
 
 .onefilm {
 	margin-top: 50px;
 }
 
+.onefilm img {
+	width: 300px;
+}
+
 .fiche-film {
-	margin-top: 50px;
+	margin: 50px 0;
 }
 
 .content-actor, .content-real {
 	display: flex;
 	justify-content: space-around;
+	margin-top: 40px;
 }
 
 .actor-name, .real-name {
@@ -104,9 +111,27 @@ select {
 }
 
 .title-actor {
-	margin-top: 100px;
+	margin-top: 70px;
+	font-size: 1.5rem;
+}
+
+.divider {
+	margin: 15px auto;
+	height: 2px;
+	width: 70px;
+	background-color: #333;
 }
 
 .title-actor h3 {
 	text-align: center;
+	font-weight: bold;
+}
+
+.content-actor {
+	margin: 0 auto;
+	display: block;
+}
+
+.list-movie {
+	display: flex;
 }

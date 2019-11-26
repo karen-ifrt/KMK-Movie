@@ -52,7 +52,7 @@ include 'header.php';
         <form action="index.php" method="get">
             <input type="hidden" name="page" value="genre">
 
-            <select name="Genre">
+            <select name="genre">
                 <?php
                 echo '<option>Choisissez un genre</option>';
                 foreach ($all_genders as $genre) {
