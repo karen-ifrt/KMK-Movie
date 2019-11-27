@@ -46,6 +46,11 @@ include 'header.php';
 
 
     </div>
+    <form action="index.php">
+            <input type="hidden" name="page" value="formulaire">
+            <button>Ajouter un film</button>
+
+        </form> -->
 
 
 
@@ -104,8 +109,4 @@ include 'header.php';
                 <input type="submit" value="Envoyer" />
         </form>
 
-        <form action="index.php">
-            <input type="hidden" name="page" value="formulaire">
-            <button>Ajouter un film</button>
-
-        </form> -->
+        

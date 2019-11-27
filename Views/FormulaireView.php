@@ -6,7 +6,7 @@ include 'header.php';
 <body>
 	<h1>Nouveau Film</h1>
 
-	<form method="post" action="">
+	<form method="post" action="index.php?page=Formplus">
 		<label for="titre">Titre du film</label>
 		<input type="text" name="titre"><br>
 		<label for="date">Année de sortie</label>
