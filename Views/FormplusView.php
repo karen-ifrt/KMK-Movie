@@ -5,9 +5,10 @@ include 'header.php';
 
 <body>
 <div class="container">
-	<div class="formulaire">
+	
 	<div class="title-form">Ajout film</div>
-	<div class="title-form2">Ajouter le genre, les acteurs, les réalisateurs</div>
+	<div class="title-form2">Ajoutez genre, acteurs et réalisateurs pour votr film</div>
+	<div class="formulaire">
 
 	<form method="post" action="">
 		<div class="form-group ">
