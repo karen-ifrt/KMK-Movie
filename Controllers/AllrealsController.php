@@ -6,7 +6,7 @@ if(isset($_GET['film'])) {
     $id = $_GET['film'];
 }
 
-$theactors = getActors();
+$thedirectors = getDirectors();
 
 
 require ('Views/AllrealsView.php');

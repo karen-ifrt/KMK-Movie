@@ -5,8 +5,9 @@ include 'header.php';
 
 <body>
 <div class="container">
+<div class="title-form">Ajout film</div>
 	<div class="formulaire">
-	<div class="title-form">Ajout film</div>
+	
 
 	<form method="post" action="index.php?page=Formplus">
 	<div class="form-group ">
