@@ -9,12 +9,13 @@ include 'header.php';
 
 <div class="fiche-acteur">
     <div class="container">
-        <div class="acteur-title">
-            <h2>
+        <div class="acteur-title titre-acteurs">
+            <h2 class="titre-actors">
                 <?php
                 echo $actors['nom'];
                 ?>
             </h2>
+            <img class="img-title" src="assets/img/play.svg" alt="play">
         </div>
         <div class="one-actor">
             <div class="row">
@@ -24,7 +25,7 @@ include 'header.php';
                 <div class="col-md-8">
                     <div class="actor-content">
                         <p class="nationalite">Nationalité : <?php echo $actors['nationalite'] ?></p>
-                        <p class="nationalite">Age : <?php echo $actors['age'] ?></p>
+                        <p class="nationalite">Age : <?php echo $actors['age'] ?> ans</p>
                         <p class="nationalite">Prix : <?php echo $actors['prix'] ?></p>
                     </div>
                     <div class="title-movie">

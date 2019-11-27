@@ -7,7 +7,21 @@
     <title><?=$title?></title>
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" type="text/css" href="./assets/style.css">
 </head>
 <body>
     
+<nav class="navbar navbar-expand-lg">
+  <a class="navbar-brand" href="#">Logo</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav m-auto">
+      <a class="nav-item nav-link active" href="index.php?page=allfilms">Tous les films</a>
+      <a class="nav-item nav-link" href="index.php?page=allactors">Tous les acteurs</a>
+      <a class="nav-item nav-link" href="#">Tous les réalisateurs</a>
+      <a class="nav-item nav-link" href="#">Ajouter un film</a>
+    </div>
+  </div>
+</nav>

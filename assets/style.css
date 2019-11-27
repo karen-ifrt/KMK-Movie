@@ -66,19 +66,19 @@ input, textarea{
 
 .mygenre {
 	padding: 20px;
-	border: 1px solid rgb(117, 51, 51);;
+	border: 1px solid #CC473C;
 	text-align: center;
 	margin: 20px 0;
 	text-transform: uppercase;
 	color: #fff;
-	background: rgb(117, 51, 51);
+	background: #CC473C;
 	font-weight: bold;
 	transition: all .3s;
 	border-radius: 15px;
 }
 
 .mygenre:hover {
-	color: rgb(117, 51, 51);
+	color: #CC473C;
 	background: #fff;
 }
 
@@ -96,9 +96,9 @@ input, textarea{
 
 .btn-retour {
 	text-transform: uppercase;
-	border: 1px solid rgb(151, 45, 45);;
+	border: 1px solid #CC473C;
 	padding: 10px 15px;
-	background-color: rgb(151, 45, 45);
+	background-color: #CC473C;
 	font-weight: bold;
 	color: #fff;
 	border-radius: 3px;
@@ -124,14 +124,130 @@ nav .nav-item {
 	text-transform: uppercase;
 	margin-left: 30px;
 	font-size: 1.2rem;
-	color: #333;
+	color: #fff;
 	font-weight: bold;
 }
 
 nav {
-	background-color: #ddd;
+	background-color: #414344;
 }
 
+/* ALL MOVIES */
+
+.movie-card {
+	padding: 10px 0;
+	margin-top: 80px;
+	border: 1px solid #ddd;
+	text-align: center;
+	box-shadow: 1px 1px 10px #ddd;
+	border-radius: 3px;
+	min-height: 500px;
+	max-height: 500px;
+	display: flex;
+	flex-direction: column;
+}
+
+.movie-title {
+	text-transform: uppercase;
+	font-size: 1.5rem;
+	margin: 20px 0;
+	font-weight: bold;
+}
+
+.movie-card img {
+	min-height: 300px;
+	max-height: 300px;
+	margin: 0 auto 20px auto;
+}
+
+.title-movies {
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 2rem;
+	font-weight: bold;
+	margin-top: 20px;
+}
+
+.movie-link {
+	margin-top: 20px;
+}
+
+.movie-link a {
+	text-decoration: none;
+	background: #414344;
+	color: #fff;
+	border: 2px solid #414344;
+	font-weight: bold;
+	font-size: 1.1rem;
+	text-transform: uppercase;
+	padding: 10px;
+	border-radius: 5px;
+	transition: all .3s;
+}
+
+.movie-link a:hover {
+	color: #414344;
+	background: #fff;
+	text-decoration: none;
+}
+
+/* ALL ACTORS */
+
+.actor-card {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border: 1px solid #ddd;
+	padding: 20px;
+	box-shadow: 1px 1px 10px #ddd;
+	border-radius: 3px;
+	min-height: 80px;
+	margin-top: 50px;
+}
+
+.actor-title {
+	text-transform: uppercase;
+	font-size: 1.2rem;
+}
+
+.actor-link a {
+	text-transform: uppercase;
+	background-color: #414344;
+	border-radius: 100%;
+	color: #fff;
+	padding: 20px 12px;
+	transition: all .5s;
+}
+
+.actor-link a:hover {
+	color: #fff;
+	border-radius: 0;
+	text-decoration: none;
+}
+
+.img-title {
+	width: 250px;
+}
+
+
+.title-actors {
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 2rem;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+
+.titre-acteurs {
+	text-align: center;
+    width: 450px;
+	margin: 50px auto;
+	border: 2px solid #CC473C;
+	border-radius: 5px;
+	padding: 20px 0;
+
+}
 
 /* FICHE FILM */
 
