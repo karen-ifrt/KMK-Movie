@@ -36,7 +36,7 @@ include 'header.php';
                         <?php
                         foreach ($mymovie as $key => $value) {
                             echo  '<div class="card">';
-                            echo '<div class="card-header"><img class="img-thumbnail" src="assets/img/' . $value['image'] . '"></div>';
+                            echo '<div class="card-header"><img class="img-thumbnail img-movie" src="assets/img/' . $value['image'] . '"></div>';
                             echo '<div class="card-body">' . $value['titre'] . '</div>';
                             echo '</div>';     
                         };

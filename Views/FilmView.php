@@ -17,7 +17,7 @@ include 'header.php';
         <div class="onefilm">
             <div class="row">
                 <div class="col-md-6">
-                    <img src="<?php echo 'assets/img/' . $movies['image'];  ?>">
+                    <img class="img-thumbnail" src="<?php echo 'assets/img/' . $movies['image'];  ?>">
                 </div>
                 <div class="col-md-6">
                     <div class="content">

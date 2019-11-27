@@ -4,7 +4,7 @@ include 'header.php';
 ?>
 
 <body>
-	<h1>Nouveau Film</h1>
+	<h1>Ajouter le genre, les acteurs, les réalisateurs</h1>
 
 	<form method="post" action="">
 		<label for="titre">Titre du film</label>
