@@ -3,20 +3,7 @@ $title = "Home";
 include 'header.php';
 ?>
 
-<nav class="navbar navbar-expand-lg">
-  <a class="navbar-brand" href="#">Logo</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav m-auto">
-      <a class="nav-item nav-link active" href="#">Tous les films</a>
-      <a class="nav-item nav-link" href="#">Recherche par acteurs</a>
-      <a class="nav-item nav-link" href="#">Recherche par réalisateurs</a>
-      <a class="nav-item nav-link" href="#">Ajouter un film</a>
-    </div>
-  </div>
-</nav>
+
 
 
 <div class="container-fluid">

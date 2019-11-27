@@ -6,12 +6,14 @@ include 'header.php';
 
 <div class="fiche-film">
     <div class="container">
-        <div class="film-title">
-            <h2>
+        <div class="film-title titre-acteurs">
+            <h2 class="titre-actors">
                 <?php
                 echo $movies['titre'];
                 ?>
             </h2>
+            <img class="img-title" src="assets/img/play.svg" alt="play">
+
         </div>
 
         <div class="onefilm">
