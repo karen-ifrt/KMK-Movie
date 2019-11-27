@@ -41,6 +41,9 @@ include 'header.php';
 		</div>
 	</form>
 	</div>
+	<div class="retour">
+            <a href="index.php" class="btn-retour">Retour accueil</a>
+	</div>
 	</div>
 </body>
 

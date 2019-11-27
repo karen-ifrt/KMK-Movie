@@ -383,7 +383,7 @@ nav {
 	text-align: center;
 	font-size: 2rem;
 	font-weight: bold;
-	margin-top: 50px;
+	margin-top: 40px;
 }
 
 .title-form2 {
@@ -396,7 +396,8 @@ nav {
 }
 .formulaire
 {
-	/* max-width: 700px; */
+	max-width: 700px;
+	align-content: center;
 }
 
 
@@ -414,10 +415,7 @@ nav {
 	transition: all .3s;
 }
 
-.retour {
-	text-align: center;
-	margin-top: 40px;
-}
+
 
 .btn-valider:hover {
 	color: rgb(151, 45, 45);

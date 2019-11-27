@@ -37,7 +37,7 @@ include 'header.php';
             <input type="hidden" name="page" value="formulaire">
             <button>Ajouter un film</button>
 
-        </form> -->
+        </form> 
 
 
 

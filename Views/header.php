@@ -12,7 +12,7 @@
 <body>
     
 <nav class="navbar navbar-expand-lg">
-  <a class="navbar-brand" href="#">Logo</a>
+  <a class="navbar-brand" href="index.php">Logo</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -20,8 +20,8 @@
     <div class="navbar-nav m-auto">
       <a class="nav-item nav-link active" href="index.php?page=allfilms">Tous les films</a>
       <a class="nav-item nav-link" href="index.php?page=allactors">Tous les acteurs</a>
-      <a class="nav-item nav-link" href="#">Tous les réalisateurs</a>
-      <a class="nav-item nav-link" href="#">Ajouter un film</a>
+      <a class="nav-item nav-link" href="index.php?page=allreals">Tous les réalisateurs</a>
+      <a class="nav-item nav-link" href="index.php?page=Formulaire">Ajouter un film</a>
     </div>
   </div>
 </nav>
