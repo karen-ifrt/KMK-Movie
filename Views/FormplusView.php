@@ -29,8 +29,6 @@ include 'header.php';
 			};
 			?>
 		</select>
-		<label class="col-form-label " for="imagerealisateur">Image</label>
-		<input class="form-control" type="file" name="picreal" accept="image/*">
 		<label class="col-form-label " for="acteur">Acteurs</label>
 		<select name="acteur"class="form-control">
 		<?php
@@ -39,8 +37,6 @@ include 'header.php';
                         echo '<option>'. $acteur['nom'] .'</option>';
 					};   ?>
 		</select>
-		<label class="col-form-label " for="imageacteur">Image</label>
-		<input class="form-control" type="file" name="picact" accept="image/*">
 		<input class="btn-valider"type="submit" name="submit" value="Envoyer">
 		</div>
 	</form>
