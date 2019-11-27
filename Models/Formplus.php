@@ -53,9 +53,10 @@ function getActors() {
 //             $success = false;
 //         }
 //     global $dbh;
-//     $statement = $dbh->prepare('INSERT INTO genre (genre) VALUES (?);INSERT INTO  (nom) VALUES (?);INSERT INTO acteurs (nom) VALUES (?);');
+//     $statement = $dbh->prepare('INSERT INTO genre (genre) VALUES (?);INSERT INTO  (nom) VALUES (?);INSERT INTO acteurs (nom) VALUES (?) WHERE id_film='".$id."';');
 //     $statement->execute(array($genre,$realisateur,$acteur ));
 //     $error = "Votre film a bien été enregistré";
+ 	// return $statement->fetchAll();
 
 
 
