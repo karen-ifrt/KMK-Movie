@@ -12,7 +12,7 @@ include 'header.php';
             <?php
             echo '<option >Choisissez un genre</option>';
             foreach ($all_genres as $genre) {
-			echo '<option>'. $genre['nom'].'</option>';
+			echo '<option>'. $genre['genre'].'</option>';
 			};
 			?>
 		</select>
