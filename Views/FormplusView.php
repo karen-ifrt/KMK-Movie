@@ -4,11 +4,15 @@ include 'header.php';
 ?>
 
 <body>
-	<h1>Ajouter le genre, les acteurs, les réalisateurs</h1>
+<div class="container">
+	<div class="formulaire">
+	<div class="title-form">Ajout film</div>
+	<div class="title-form2">Ajouter le genre, les acteurs, les réalisateurs</div>
 
 	<form method="post" action="">
-		<label for="genre">genre du film</label>
-		<select name="genre">
+		<div class="form-group ">
+		<label class="col-form-label " for="genre">Genre du film</label>
+		<select name="genre" class="form-control">
             <?php
             echo '<option >Choisissez un genre</option>';
             foreach ($all_genres as $genre) {
@@ -16,8 +20,8 @@ include 'header.php';
 			};
 			?>
 		</select>
-		<label for="realisateur">Réalisateur</label>
-		<select name="realisateur">
+		<label class="col-form-label "for="realisateur">Réalisateur</label>
+		<select name="realisateur"class="form-control">
             <?php
             echo '<option>Choisissez un realisateur</option>';
             foreach ($all_realisateurs as $realisateur) {
@@ -25,16 +29,19 @@ include 'header.php';
 			};
 			?>
 		</select>
-		<label for="acteur">Acteurs</label>
-		<select name="acteur">
+		<label class="col-form-label " for="acteur">Acteurs</label>
+		<select name="acteur"class="form-control">
 		<?php
 		echo '<option>Choisissez un acteur</option>';
                     foreach ($all_acteurs as $acteur) {
                         echo '<option>'. $acteur['nom'] .'</option>';
 					};   ?>
 		</select>
-		<input type="submit" name="submit" value="Envoyer">
+		<input class="btn-valider"type="submit" name="submit" value="Envoyer">
+		</div>
 	</form>
+	</div>
+	</div>
 </body>
 
 </html>
