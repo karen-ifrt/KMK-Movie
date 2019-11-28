@@ -397,17 +397,47 @@ nav {
 	font-weight: bold;
 }
 
-.card {
+.carte-header{
+	text-align: center;
+	border: 2px solid black;
 	background-color: #414344;
+	padding: 20px;
 }
 
-.card-header, .card-body {
+.carte-body{
 	text-align: center;
 	text-transform: uppercase;
+	background-color: #414344;
+	padding: 10px;
+	color: white;
+	font-size: 14px;
+}
+.carte-header img {
+	width: 300px;
 }
 
-.card-header img {
-	width: 150px;
+.carte-footer{
+	text-align: center;
+	border: 2px solid black;
+	background-color: #414344;
+	padding: 10px;
+}
+
+#carte-lien{
+	text-decoration: none;
+	color: #CC473C;
+}
+
+.btnn-fiche{
+	width: 30px;
+	transition: all ease 500ms;
+	color: #CC473C;
+	padding-bottom: 5px;
+}
+
+.btnn-fiche:hover{
+	text-decoration: none;
+	transform: scale(1.5);
 }
 
 /* FICHE ACTEUR */
@@ -467,10 +497,11 @@ nav {
 
 .card-movie .btn-fiche {
 	width: 60px;
-	transition: all .5s;
+	transition: all ease 500ms;
+	margin-bottom: 10px;
 }
 .card-movie .btn-fiche:hover {
-	width: 80px;
+	transform: scale(1.5);
 }
 
 .link-film {
