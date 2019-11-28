@@ -1,6 +1,6 @@
 <footer id="footer">
 <div id="footer-div"> © 2019 Copyright : KMK
-    <div id="footer-div2">ACS promo Css117: Milena WACHTEL - Khaoula Alaoui - Karen IAFRATE
+    <div id="footer-div2">ACS promo Css117: Milena WACHTEL - Khaoula ALAOUI - Karen IAFRATE
     </div>
 </div>
 
