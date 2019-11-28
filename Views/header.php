@@ -16,8 +16,8 @@
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav ">
-      <a class="nav-item nav-link active" href="index.php?page=allfilms">Tous les films</a>
+    <div class="navbar-nav">
+      <a class="nav-item nav-link" href="index.php?page=allfilms">Tous les films</a>
       <a class="nav-item nav-link" href="index.php?page=allactors">Tous les acteurs</a>
       <a class="nav-item nav-link" href="index.php?page=allreals">Tous les réalisateurs</a>
       <a class="nav-item nav-link" href="index.php?page=Formulaire">Ajouter un film</a>

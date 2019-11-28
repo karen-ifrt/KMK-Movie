@@ -3,7 +3,9 @@ $title = "Tous les acteurs";
 include 'header.php';
 ?>
 
-
+<div class="background-top">
+    <img src="assets/img/gauche.png">
+</div>
 
 <div class="container">
     <div class="titre-acteurs">
@@ -30,6 +32,9 @@ include 'header.php';
 
         ?>
     </div>
+</div>
+<div class="background-bottom-actors">
+    <img src="assets/img/droite.png" alt="">
 </div>
 
 
