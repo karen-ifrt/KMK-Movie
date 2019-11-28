@@ -169,7 +169,7 @@ nav {
 
 .quote {
 	position: absolute;
-	font-size: 1.9rem;
+	font-size: 30px;
 	top: 48%;
 	left: 50%;
 	transform: translate(-50%, -50%);
