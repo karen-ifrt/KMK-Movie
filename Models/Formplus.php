@@ -33,7 +33,6 @@ function getActors() {
 
 
 
-
 // // function insertion() {
 // if(isset($_POST['submit'])) {
 //     $genre = $_POST['genre'];
