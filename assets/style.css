@@ -409,8 +409,8 @@ nav {
 	text-transform: uppercase;
 	background-color: #414344;
 	padding: 10px;
-	/* color: #CC473C; */
 	color: white;
+	font-size: 14px;
 }
 .carte-header img {
 	width: 300px;
@@ -430,7 +430,7 @@ nav {
 
 .btnn-fiche{
 	width: 30px;
-	transition: all .5s;
+	transition: all ease 500ms;
 	color: #CC473C;
 	padding-bottom: 5px;
 }
@@ -438,7 +438,6 @@ nav {
 .btnn-fiche:hover{
 	text-decoration: none;
 	transform: scale(1.5);
-	transition: all ease 500ms;
 }
 
 /* FICHE ACTEUR */
@@ -498,10 +497,11 @@ nav {
 
 .card-movie .btn-fiche {
 	width: 60px;
-	transition: all .5s;
+	transition: all ease 500ms;
+	margin-bottom: 10px;
 }
 .card-movie .btn-fiche:hover {
-	width: 80px;
+	transform: scale(1.5);
 }
 
 .link-film {
