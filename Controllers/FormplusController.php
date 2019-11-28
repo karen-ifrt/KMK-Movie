@@ -9,6 +9,8 @@ if (isset($_POST['submit'])) {
     $new_genre=$_POST['genre'];
     $new_realisateur=$_POST['realisateur'];
     $new_acteur=$_POST['acteur'];
-    $insert = $insertion();
+    // $insert = $insertion();
+
+}
 
 require ('Views/FormplusView.php');
