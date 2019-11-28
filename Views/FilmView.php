@@ -46,13 +46,13 @@ include 'header.php';
 
                     <?php
                     foreach ($myactor as $key => $value) {
-                        echo  '<div class="card">';
-                        echo '<div class="card-header"><img class="img-thumbnail" src="assets/img/' . $value['image'] . '"></div>';
-                        echo '<div class="card-body">' . $value['nom'] . '</div>';
-                        echo   '<div class="card-footer"><a href="index.php?page=acteur&acteur=' . $value['id'] . '">Voir la fiche</a></div>';
+                        echo  '<div class="carte">';
+                        echo '<div class="carte-header"><img class="img-thumbnail" src="assets/img/' . $value['image'] . '"></div>';
+                        echo '<div class="carte-body">' . $value['nom'] . '</div>';
+                        echo   '<div class="carte-footer"><a  id="carte-lien" href="index.php?page=acteur&acteur=' . $value['id'] . '"><img alt="bouton" src="assets/img/playyy.svg" class="btnn-fiche"><p>Voir la fiche</p></a></div>';
                         echo '</div>';
-                    };   ?>
-
+                    };
+                    ?>
                 </div>
             </div>
 
@@ -65,11 +65,12 @@ include 'header.php';
                     <?php
 
                     foreach ($myreal as $key => $valreal) {
-                        echo  '<div class="card">';
-                        echo '<div class="card-header"><img class="img-thumbnail" src="assets/img/' . $valreal['image'] . '"></div>';
-                        echo '<div class="card-body">' . $valreal['nom'] . '</div>';
-                        echo   '<div class="card-footer"><a href="index.php?page=realisateur&realisateur=' . $valreal['id'] . '">Voir la fiche</a></div>';
+                        echo  '<div class="carte">';
+                        echo '<div class="carte-header"><img class="img-thumbnail" src="assets/img/' . $valreal['image'] . '"></div>';
+                        echo '<div class="carte-body">' . $valreal['nom'] . '</div>';
+                        echo   '<div class="carte-footer"><a id="carte-lien" href="index.php?page=realisateur&realisateur=' . $valreal['id'] . '"><img alt="bouton" src="assets/img/playyy.svg" class="btnn-fiche"><p>Voir la fiche</p></a></div>';
                         echo '</div>';
+
                     };
                     ?>
                 </div>
