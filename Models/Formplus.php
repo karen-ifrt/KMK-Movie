@@ -33,7 +33,7 @@ function getActors() {
 
 
 
-// // function insertion() {
+// function insertion() {
 // if(isset($_POST['submit'])) {
 //     $genre = $_POST['genre'];
 //     $realisateur = $_POST['realisateur'];
@@ -55,7 +55,7 @@ function getActors() {
 //     $statement = $dbh->prepare('INSERT INTO genre (genre) VALUES (?);INSERT INTO  (nom) VALUES (?);INSERT INTO acteurs (nom) VALUES (?) WHERE id_film='".$id."';');
 //     $statement->execute(array($genre,$realisateur,$acteur ));
 //     $error = "Votre film a bien été enregistré";
- 	// return $statement->fetchAll();
+//  	return $statement->fetchAll();
 
 
 

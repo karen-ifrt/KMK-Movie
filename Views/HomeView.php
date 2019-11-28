@@ -16,8 +16,9 @@ include 'header.php';
         </div>
 
     </div>
+</div>
 
-    <div class="container">
+<div class="container">
         <div class="titre-acteurs">
             <h2 class="title-actors the-title">Recherche par genre</h2>
             <img class="img-title" src="assets/img/play.svg" alt="play">
@@ -40,8 +41,10 @@ include 'header.php';
 
 
 
-    </div>
-
+</div>
+    <?php include 'footer.php';
+?>
+  
 
 
 
@@ -99,4 +102,5 @@ include 'header.php';
                 <input type="submit" value="Envoyer" />
         </form>
 
+        
         
