@@ -38,4 +38,7 @@ include 'header.php';
         <img src="assets/img/droite.png" alt="">
     </div>
 
+</div>
+    <?php include 'footer.php';
+?>
 

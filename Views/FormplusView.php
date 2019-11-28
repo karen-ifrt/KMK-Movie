@@ -46,6 +46,6 @@ include 'header.php';
             <a href="index.php" class="btn-retour">Retour accueil</a>
 	</div>
 	</div>
-</body>
-
-</html>
+	</div>
+    <?php include 'footer.php';
+?>
