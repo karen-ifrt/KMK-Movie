@@ -11,9 +11,9 @@ include 'header.php';
         <video class="video" src="assets/img/PopCorn.mp4" autoplay muted loop>
         </video>
         <div class="logo-home">
-            <img src="assets/img/KMK.svg" alt="Logo home">
+            <img class="logo-h" src="assets/img/KMK.svg" alt="Logo home">
+            <p class="quote"><span><img class="quote-1" src="assets/img/quote.svg" alt=""></span> Le cinéma, c'est un rêve que l'on rend possible. <span><img class="quote-2" src="assets/img/quote.svg" alt=""></span></p>
         </div>
-        <p class="quote"><span><img class="quote-1" src="assets/img/quote.svg" alt=""></span> Le cinéma, c'est un rêve que l'on rend possible. <span><img class="quote-2" src="assets/img/quote.svg" alt=""></span></p>
 
     </div>
 
