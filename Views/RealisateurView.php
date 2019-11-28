@@ -50,7 +50,7 @@ include 'header.php';
             </div>
         </div>
         <div class="retour">
-                <a href="index.php" class="btn-retour">
+                <a href="index.php?page=allreals" class="btn-retour">
                     <img src="assets/img/replayyyyy.svg" alt="">
                     <p>Retour</p>
                 </a>

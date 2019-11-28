@@ -1,9 +1,4 @@
-<?php 
-
-require('db.php');
-$dbh = new PDO('mysql:host='. $host .';dbname='. $dbname, $user, $pass);
-$dbh->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
-
+<?php
 
 function getGenders() {
     global $dbh;
@@ -56,9 +51,6 @@ function getActors() {
 //     $statement->execute(array($genre,$realisateur,$acteur ));
 //     $error = "Votre film a bien été enregistré";
 //  	return $statement->fetchAll();
-
-
-
 
 
 

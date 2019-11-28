@@ -289,6 +289,11 @@ nav {
 	min-height: 80px;
 	margin-top: 50px;
 	background: #fff;
+	transition: all .3s;
+}
+
+.actor-card:hover {
+	border: 1px solid #CC473C;
 }
 
 .actor-title {
