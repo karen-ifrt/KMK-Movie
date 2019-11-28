@@ -9,7 +9,7 @@ include 'header.php';
 	<div class="formulaire">
 	
 
-	<form method="post" action="index.php?page=Formplus">
+	<form method="post" action="index.php?page=Formplus&id=<?php echo $last_id ?>">
 	<div class="form-group ">
 		<label class="col-form-label " for="titre">Titre du film</label>
 		<input class="form-control" type="text" name="titre"><br>
