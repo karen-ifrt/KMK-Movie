@@ -10,11 +10,19 @@ include 'header.php';
     <div class="row">
         <video class="video" src="assets/img/PopCorn.mp4" autoplay muted loop>
         </video>
+        <div class="logo-home">
+            <img src="assets/img/KMK.svg" alt="Logo home">
+        </div>
+        <p class="quote"><span><img class="quote-1" src="assets/img/quote.svg" alt=""></span> Le cinéma, c'est un rêve que l'on rend possible. <span><img class="quote-2" src="assets/img/quote.svg" alt=""></span></p>
 
     </div>
 
     <div class="container">
-        <h2 class="home-title">Recherche par un genre</h2>
+        <div class="titre-acteurs">
+            <h2 class="title-actors the-title">Recherche par genre</h2>
+            <img class="img-title" src="assets/img/play.svg" alt="play">
+
+        </div>
         <div class="list-gender">
             <div class="row">
 
@@ -33,11 +41,6 @@ include 'header.php';
 
 
     </div>
-    <form action="index.php">
-            <input type="hidden" name="page" value="formulaire">
-            <button>Ajouter un film</button>
-
-        </form> 
 
 
 
