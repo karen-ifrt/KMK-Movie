@@ -19,15 +19,19 @@ include 'header.php';
         </div>
         <div class="one-actor">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-6">
+                    <div class="title-movie">
+                        <h3>SA BIOGRAPHIE</h3>
+                        <div class="movie-divider"></div>
+                    </div>
                     <img class="img-thumbnail" src="<?php echo 'assets/img/' . $actors['image'];  ?>">
-                </div>
-                <div class="col-md-8">
                     <div class="actor-content">
                         <p class="nationalite">Nationalité : <?php echo $actors['nationalite'] ?></p>
                         <p class="nationalite">Age : <?php echo $actors['age'] ?> ans</p>
                         <p class="nationalite">Prix : <?php echo $actors['prix'] ?></p>
                     </div>
+                </div>
+                <div class="col-md-6">
                     <div class="title-movie">
                         <h3>SES FILMS</h3>
                         <div class="movie-divider"></div>
@@ -36,10 +40,11 @@ include 'header.php';
                     <div class="list-movie">
                         <?php
                         foreach ($mymovie as $key => $value) {
-                            echo  '<div class="card">';
-                            echo '<div class="card-header"><img class="img-thumbnail img-movie" src="assets/img/' . $value['image'] . '"></div>';
-                            echo '<div class="card-body">' . $value['titre'] . '</div>';
-                            echo '</div>';     
+                            echo  '<div class="card-movie">';
+                            echo '<div class="movie-header"><img class="img-movie" src="assets/img/' . $value['image'] . '"></div>';
+                            echo '<div class="movie-body"><p>' . $value['titre'] . '</p>';
+                            echo '<p class="link-film"><a href="index.php?page=film&film=' . $value['id_Films'] . '">';
+                            echo '<img alt="bouton" src="assets/img/playyy.svg" class="btn-fiche"><p>Voir la fiche</p></a></p></div></div>';
                         };
                         ?>
                     </div>
@@ -48,7 +53,10 @@ include 'header.php';
             </div>
         </div>
         <div class="retour">
-            <a href="index.php" class="btn-retour">Retour accueil</a>
+                <a href="index.php" class="btn-retour">
+                    <img src="assets/img/replayyyyy.svg" alt="">
+                    <p>Retour</p>
+                </a>
         </div>
 
     </div>
