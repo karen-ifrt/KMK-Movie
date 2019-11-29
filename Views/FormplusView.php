@@ -10,7 +10,7 @@ include 'header.php';
 	<div class="title-form2">Ajoutez genre, acteurs et réalisateurs pour votr film</div>
 	<div class="formulaire">
 
-	<form method="post" action="">
+	<form method="post" action="index.php?page=Formsub">
 		<div class="form-group ">
 		<label class="col-form-label " for="genre">Genre du film</label>
 		<select name="genre" class="form-control">
