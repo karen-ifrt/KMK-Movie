@@ -70,6 +70,8 @@ function test()
         global $dbh;
         $statement = $dbh->prepare('INSERT INTO avoir (id, id_Films) VALUES (?, ?); INSERT INTO jouer (id, id_Films) VALUES (?, ?); INSERT INTO realiser (id, id_realisateur) VALUES (?, ?) ');
         $statement->execute(array($genre, $myid, $acteur, $myid, $myid, $realisateur));
+        header('Location: index.php?page=Formsub');
+
         }
 
         // $statement->execute(array($genre,$realisateur,$acteur ));
