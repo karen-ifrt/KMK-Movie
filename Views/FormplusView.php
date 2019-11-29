@@ -4,9 +4,7 @@ include 'header.php';
 ?>
 
 <body>
-	<?php
-	var_dump($maxid['max_id']);
-	?>	
+	
 	<div class="container">
 
 		<div class="title-form">Ajout film</div>
@@ -25,24 +23,24 @@ include 'header.php';
 
 						?>
 					</select>
-					<!-- <label class="col-form-label "for="realisateur">Réalisateur</label>
+					<label class="col-form-label "for="realisateur">Réalisateur</label>
 		<select name="realisateur"class="form-control">
             <?php
-			// echo '<option>Choisissez un realisateur</option>';
-			// foreach ($all_realisateurs as $realisateur) {
-			// echo '<option>'. $realisateur['nom'].'</option>';
-			// };
+			echo '<option>Choisissez un realisateur</option>';
+			foreach ($all_realisateurs as $realisateur) {
+			echo '<option value="' . $realisateur['id'] . '">'. $realisateur['nom'].'</option>';
+			};
 			?>
 		</select>
 		<label class="col-form-label " for="acteur">Acteurs</label>
 		<select name="acteur"class="form-control">
 		<?php
-		// echo '<option>Choisissez un acteur</option>';
-		//             foreach ($all_acteurs as $acteur) {
-		//                 echo '<option>'. $acteur['nom'] .'</option>';
-		// 			};   
+		echo '<option>Choisissez un acteur</option>';
+		            foreach ($all_acteurs as $acteur) {
+		                echo '<option value="' . $acteur['id'] . '">'. $acteur['nom'] .'</option>';
+					};   
 		?>
-		</select> -->
+		</select>
 					<input class="btn-valider" type="submit" name="submit" value="Envoyer">
 				</div>
 			</form>
