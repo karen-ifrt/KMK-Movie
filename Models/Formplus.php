@@ -49,28 +49,27 @@ function test()
         $maxid = $dbh->query('SELECT MAX(id) AS max_id, id FROM films');
         $maxid = $maxid->fetch();
         $genre = $_POST['genre'];
-        // $realisateur = $_POST['realisateur'];
-        // $acteur = $_POST['acteur'];
+        $realisateur = $_POST['realisateur'];
+        $acteur = $_POST['acteur'];
         $myid = $maxid['max_id'];
         $success = true;
-        // if (empty($genre)) {
-        //     $error = "Merci de renseigner tous les champs";
-        //     $success = false;
-        // }
-        // if (empty($realisateur)) {
-        //     $error = "Merci de renseigner tous les champs";
-        //     $success = false;
-        // }
-        // if (empty($acteur)) {
-        //     $error = "Merci de renseigner tous les champs";
-        //     $success = false;
-        // }
+        if (empty($genre)) {
+            $error = "Merci de renseigner tous les champs";
+            $success = false;
+        }
+        if (empty($realisateur)) {
+            $error = "Merci de renseigner tous les champs";
+            $success = false;
+        }
+        if (empty($acteur)) {
+            $error = "Merci de renseigner tous les champs";
+            $success = false;
+        }
 
         if($success){
         global $dbh;
-        $statement = $dbh->prepare('INSERT INTO avoir (id, id_Films) VALUES (?, ?)');
-        $statement->execute(array($genre, $myid));
-        header('Location: index.php?page=Formsub');
+        $statement = $dbh->prepare('INSERT INTO avoir (id, id_Films) VALUES (?, ?); INSERT INTO jouer (id, id_Films) VALUES (?, ?); INSERT INTO realiser (id, id_realisateur) VALUES (?, ?) ');
+        $statement->execute(array($genre, $myid, $acteur, $myid, $myid, $realisateur));
         }
 
         // $statement->execute(array($genre,$realisateur,$acteur ));

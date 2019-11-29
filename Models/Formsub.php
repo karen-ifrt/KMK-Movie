@@ -21,10 +21,3 @@ function getLastMovie(){
     return $lastmovie;
 }
 
-// function test()
-// {
-//     global $dbh;
-//     $maxid = $dbh->query('SELECT MAX(id) AS max_id, id FROM films');
-//     $maxid = $maxid->fetch();
-//     return $maxid;
-// }
