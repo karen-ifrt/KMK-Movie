@@ -5,32 +5,26 @@ require('db.php');
 $dbh = new PDO('mysql:host='. $host .';dbname='. $dbname, $user, $pass);
 $dbh->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
 
-$error = "";
-$success = false;
-
-
-
-function insertion() {
-if(isset($_POST['submit'])) {
-    $genre = $_POST['genre'];
-    $realisateur = $_POST['realisateur'];
-    $acteur = $_POST['acteur'];
-    $success = true;
-        if(empty($genre)){
-            $error = "Merci de renseigner tous les champs";
-            $success = false;
-        }
-        if(empty($realisateur)){
-            $error = "Merci de renseigner tous les champs";
-            $success = false;
-        }
-        if(empty($acteur)){
-            $error = "Merci de renseigner tous les champs";
-            $success = false;
-        }
+function getMovie($id) {
     global $dbh;
-    $statement = $dbh->prepare('INSERT INTO genre (genre) VALUES (?);INSERT INTO  (nom) VALUES (?);INSERT INTO acteurs (nom) VALUES (?) WHERE id_film= $id ;');
-    $statement->execute(array($genre,$realisateur,$acteur ));
-    $error = "Votre film a bien été enregistré";
-     return $statement->fetchAll();
-     
+    $statement = $dbh->prepare('SELECT * FROM films WHERE id = ?');
+    $statement->execute(array($id));
+    $movies = $statement->fetch();
+    return $movies;
+}
+
+function getLastMovie(){
+    global $dbh;
+    $statement = $dbh->prepare('SELECT * FROM films WHERE id=(select max(id) FROM films)');
+    $statement->execute();
+    $lastmovie = $statement->fetch();
+    return $lastmovie;
+}
+
+// function test()
+// {
+//     global $dbh;
+//     $maxid = $dbh->query('SELECT MAX(id) AS max_id, id FROM films');
+//     $maxid = $maxid->fetch();
+//     return $maxid;
+// }

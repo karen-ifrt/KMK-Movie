@@ -70,6 +70,7 @@ function test()
         global $dbh;
         $statement = $dbh->prepare('INSERT INTO avoir (id, id_Films) VALUES (?, ?)');
         $statement->execute(array($genre, $myid));
+        header('Location: index.php?page=Formsub');
         }
 
         // $statement->execute(array($genre,$realisateur,$acteur ));
