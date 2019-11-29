@@ -2,8 +2,8 @@
 
 require ('Models/Formplus.php');
 
-$all_acteurs = getActors();
-$all_realisateurs = getDirectors();
+// $all_acteurs = getActors();
+// $all_realisateurs = getDirectors();
 $all_genres = getGenders();
 // if (isset($_POST['submit'])) {
 //     $new_genre=$_POST['genre'];
@@ -11,5 +11,7 @@ $all_genres = getGenders();
 //     $new_acteur=$_POST['acteur'];
 //     // $insert = $insertion();
 // }
+
+$maxid = test();
 
 require ('Views/FormplusView.php');

@@ -7,6 +7,7 @@ include 'header.php';
     <img src="assets/img/gauche.png">
 </div>
 
+<div class="bottom">
 <div class="container">
     <div class="titre-acteurs">
 
@@ -36,7 +37,7 @@ include 'header.php';
 <div class="background-bottom-actors">
     <img src="assets/img/droite.png" alt="">
 </div>
-
+</div>
 
 
 

@@ -47,7 +47,7 @@ include 'header.php';
                     <?php
                     foreach ($myactor as $key => $value) {
                         echo  '<div class="carte">';
-                        echo '<div class="carte-header"><img class="img-thumbnail" src="assets/img/' . $value['image'] . '"></div>';
+                        echo '<div class="carte-header"><img src="assets/img/' . $value['image'] . '"></div>';
                         echo '<div class="carte-body">' . $value['nom'] . '</div>';
                         echo   '<div class="carte-footer"><a  id="carte-lien" href="index.php?page=acteur&acteur=' . $value['id'] . '"><img alt="bouton" src="assets/img/playyy.svg" class="btnn-fiche"><p>Voir la fiche</p></a></div>';
                         echo '</div>';
@@ -66,9 +66,9 @@ include 'header.php';
 
                     foreach ($myreal as $key => $valreal) {
                         echo  '<div class="carte">';
-                        echo '<div class="carte-header"><img class="img-thumbnail" src="assets/img/' . $valreal['image'] . '"></div>';
+                        echo '<div class="carte-header"><img src="assets/img/' . $valreal['image'] . '"></div>';
                         echo '<div class="carte-body">' . $valreal['nom'] . '</div>';
-                        echo   '<div class="carte-footer"><a id="carte-lien" href="index.php?page=realisateur&realisateur=' . $valreal['id'] . '"><img alt="bouton" src="assets/img/playyy.svg" class="btnn-fiche"><p>Voir la fiche</p></a></div>';
+                        echo   '<div class="carte-footer"><a id="carte-lien" href="index.php?page=realisateur&realisateur=' . $valreal['id_realisateur'] . '"><img alt="bouton" src="assets/img/playyy.svg" class="btnn-fiche"><p>Voir la fiche</p></a></div>';
                         echo '</div>';
 
                     };
@@ -84,6 +84,8 @@ include 'header.php';
         </div>
     </div>
 </div>
+
+
 <?php
 include 'footer.php';
 ?>

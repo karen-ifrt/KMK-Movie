@@ -7,6 +7,7 @@ include 'header.php';
     <img src="assets/img/gauche.png">
 </div>
 
+<div class="bottom">
 <div class="container">
     <div class="titre-acteurs">
 
@@ -32,13 +33,17 @@ include 'header.php';
 
         ?>
     </div>
+
+
 </div>
 
 <div class="background-bottom">
         <img src="assets/img/droite.png" alt="">
+
     </div>
-
 </div>
-    <?php include 'footer.php';
-?>
 
+
+<!-- </div> -->
+<?php include 'footer.php';
+?>
